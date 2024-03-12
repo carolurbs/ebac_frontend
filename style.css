@@ -1,0 +1,142 @@
+*
+{
+    color:#eae9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body
+{
+    background-color: #252525;
+}
+
+
+.container 
+{
+display: flex;
+flex-direction: row;
+background-color: #353434;
+border-bottom:2px solid #4f4e4e;
+box-shadow: 0 5px 5px #161616;
+justify-content: space-between;
+padding: 5px;
+margin: 0 0 10px ;
+}
+
+.container ul
+{
+display: flex;
+flex-direction: row;
+list-style: none;
+text-align: center;
+
+}
+.container li
+{
+margin: 10px;
+font-weight: 700;
+}
+
+.container li a
+{
+    text-decoration: none;
+    padding: 5px;
+    border-radius:15px;
+}
+.container li a:hover
+{
+text-decoration: underline;  
+border: 2px solid #eae9e9;
+}
+.sports
+{
+    border: 2px solid green;
+}
+.economy
+{
+    border: 2px solid gold;
+
+}
+.entertainment
+{
+    border: 2px solid palevioletred;
+}
+.tech
+{
+    border: 2px solid lightblue;
+}
+
+section .container
+{
+    display: flex;
+    flex-direction: column;
+}
+section .container h2
+{
+    margin:10px;
+    box-shadow: 0 5px 5px #161616;
+
+} 
+.sports_title
+{
+    background-color: rgba(32, 40, 32, 0.7);
+    border-bottom: 2px solid #014b01;
+}
+.economy_title
+{
+    background-color: rgba(42, 41, 32, 0.7);
+    border-bottom: 2px solid #5c4f05;
+}
+.entertainment_title
+{
+    background-color: rgba(41, 31, 36, 0.7);
+    border-bottom: 2px solid #503c46;
+}
+.tech_title
+{
+    background-color: rgba(31, 35, 41, 0.7);
+    border-bottom: 2px solid #39414c;
+}
+.articles
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+.articles article
+{
+ width: 30%;
+ margin: 5px 10px;
+ max-width: 30ch;
+}
+img
+{
+    border-radius: 10%;
+    height: 150px;
+}
+.articles p 
+{
+    margin-bottom: 15px;
+}
+.articles a{
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #eae9e9;
+    border-radius: 15px;
+}
+.articles a:hover
+{
+    border-color: transparent;
+    background-color: #eae9e9;
+    color: #252525;
+}
+.articles time
+{
+    font-size: 12px;
+    font-style: italic;
+}
