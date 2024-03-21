@@ -1,0 +1,58 @@
+body
+{
+    background-color: #3a3a3a;
+    color: #d3d3d3;
+}
+
+
+div
+{
+    font-family: sans-serif;
+    display:flex ;
+    font-size: 16px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 250px;
+}
+label
+{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+::placeholder
+{
+    font-family: sans-serif;
+    justify-content:center;
+    padding: 5px;
+    font-size: 16px;
+}
+input,button
+{
+    color: #d3d3d3;
+    border-color: #d3d3d3;
+    background-color: #3a3a3a ;
+    border-radius: 5px;
+}
+input:focus,button:hover
+{
+    outline: 2px solid #e5e4e4;
+}
+div .success
+{
+    color: green;
+}
+div .failure
+{
+    color: red;
+}
+form button
+{
+    color:#d3d3d3;
+    font-weight:bold ;
+    margin: 10px 100px;
+}
+form input, form label
+{
+    margin-bottom: 10px;
+}

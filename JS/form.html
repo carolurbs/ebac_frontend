@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Matemático</title>
+    <link rel="stylesheet" href="./form.css">
 </head>
 <body>
-    <form> 
-        <label for="campo1">Primeiro Número</label>
-        <input id="campo1" type="number"placeholder="Insira um número"/>
-        <br/>
-        <label for="campo2">Segundo Número</label>
-        <input id="campo2" type="number"placeholder="Insira um número"/>
-        <br/>
-        <button type="submit"> Enviar</button>
-    </form>
+    <div>
+
+        <form id="calculadora"> 
+            <label for="campoA">Campo A</label>
+            <input id="campoA" type="number"placeholder="Insira um número" required/>
+            <br/>
+            <label for="campoB">Campo B</label>
+            <input id="campoB" type="number"placeholder="Insira um número" required/>
+            <br/>
+            <button type="submit"> Enviar</button>
+        </form>
+        <p class="success" id="success"><b>Tudo certo!</b></p>
+        <p class="failure" id="failure"> <b>O campo B precisa ser maior que o campo A </b></p>
+    </div>
+    <script src="./form.js"></script>
 </body>
 </html>
