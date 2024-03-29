@@ -49,3 +49,16 @@ button
     text-transform: uppercase;
     color: #fff;
 }
+ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #341f97;
+    margin-top: 20px;
+}
+.completed
+{
+    text-decoration: line-through;
+}
