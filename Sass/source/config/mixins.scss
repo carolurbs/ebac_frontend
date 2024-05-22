@@ -1,0 +1,16 @@
+
+@mixin list-item
+{
+    list-style: none;
+}
+
+
+@mixin container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+@mixin container-tablet
+{
+    max-width: 80%;
+}

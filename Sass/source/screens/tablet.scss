@@ -1,0 +1,21 @@
+@use '../config/mixins.scss';
+
+@media screen and (max-width: 1023px) {
+     body{
+        header{
+            .container{
+                @include mixins.container-tablet;
+            }
+        }
+        section{
+            .container{
+                @include mixins.container-tablet;
+                .products {
+                    grid-template-columns: repeat(2, 48.5%);
+                    column-gap: 3%;
+                }
+            }
+
+            }
+        }
+    }

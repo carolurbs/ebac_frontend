@@ -1,0 +1,87 @@
+@use 'config/reset';
+@use 'config/colors';
+@use 'config/mixins';
+@use 'screens/mobile';
+@use 'screens/tablet';
+
+body
+{
+    background-color:colors.$cor-principal;
+   
+    header{
+        background-color: colors.$cor-secundaria;
+        position: sticky;
+        top: 0;
+        left: 0;
+        .container
+        {
+            @include mixins.container;
+            display: flex;
+             justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            .menu
+            {
+                display: flex;
+                li
+                {
+                    @include mixins.list-item;
+                    font-weight: bold;
+                    margin-left: 24px;
+                    a
+                    {
+                        color:colors.$button-text;
+                        text-decoration: none;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+    section{
+        padding: 56px 0;
+        .container{
+            @include mixins.container;
+            .products
+            {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(3, 32.66%);
+                column-gap: 1%;
+                row-gap: 4%;
+                width: 100%;
+    
+                .product-item
+                {
+                    @include mixins.list-item;
+    
+                    img
+                    {
+                        width: 100%;
+                        border-radius: 16px;
+                    }
+                    .product-button {
+                        display: block;
+                        background-color:colors.$button-bg;
+                        color: colors.$button-text;
+                        text-align: center;
+                        padding: 8px 0;
+                        border-radius: 8px;
+                        margin-top: 8px;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: colors.$button-hover;
+                        }
+                    }
+    
+                }
+            }
+
+
+        }
+
+       
+    }
+}
