@@ -1,0 +1,37 @@
+@import "mixins.less";
+@breakpointMobile:~"(max-width:767px)";
+@breakpointTablet:~"(min-width:767px) and (max-width:1023)";
+
+
+@media @breakpointMobile
+{
+    .products {
+        display: block;
+
+        .product-item  {
+            margin-bottom: 32px;
+        }
+
+    }   
+}
+
+@media @breakpointTablet{
+
+    body{
+        header{
+            .container{
+                .container-tablet();
+            }
+        }
+        section{
+            .container{
+                .container-tablet();
+                .products {
+                    grid-template-columns: repeat(2, 48.5%);
+                    column-gap: 3%;
+                }
+            }
+
+            }
+        }
+}
