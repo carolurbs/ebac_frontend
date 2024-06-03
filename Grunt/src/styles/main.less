@@ -1,0 +1,85 @@
+
+@import "../config/reset.less";
+@import "../config/maps.less";
+@import "../config/mixins.less";
+
+body
+{
+    background-color: #colors[background];
+    margin: 5px;
+    main{
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+        h1{
+            font-family: #fonts[title-font];
+            color:#colors[secondary-color];
+            font-size: 3em;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                .text();
+                font-weight: 700;
+    
+            }
+            input{
+                .text();
+                display: block;
+                margin: 16px auto 0;
+                max-width: 120px;
+                background-color: transparent;
+                border: 1px solid #colors[secondary-color];
+                border-bottom: 3px solid #colors[secondary-color];
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 2em;
+                &:focus
+                {
+                    outline: 2px solid #colors[form-focus];
+                }
+            }
+            button{
+                .text();
+                font-size: 1.5em;
+                font-family: #fonts[body-font];
+                background-color: transparent;
+                border: 1px solid #colors[secondary-color];
+                border-bottom: 3px solid #colors[secondary-color];
+                border-radius: 5px;
+                padding: 16px;
+                cursor: pointer;
+                font-weight: 700;
+                margin-top: 16px;
+                &:hover
+                {
+                background-color:#colors[secondary-color];
+                color: #colors[background];
+                border: none;
+                }
+                
+            }
+        }
+
+        .result
+        {   
+            color: #colors[secondary-color];
+            font-family: #fonts[body-font];
+            padding:16px ;
+            margin-top:120px;
+            border: 8px dotted #colors[secondary-color];
+            display: none;
+            span{
+                font-weight: 700;
+                font-size: 3em;
+                display: block;
+            }
+        }
+    }
+}
