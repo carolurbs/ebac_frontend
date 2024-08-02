@@ -1,6 +1,8 @@
 :root {
-    --header-color: #01a3a4;
-    --bg-color: #eee;
+    --header-color:#78866B;
+    --bg-color: #363232;
+    --text-color: #c4dcb4;
+    
 }
 
 * {
@@ -9,10 +11,12 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    color: var(--text-color);
+    
 }
 
 body {
-    background-color: var(--bg-color);;
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -55,18 +59,23 @@ header .container {
     display: inline-block;
     margin-top: 24px;
     text-decoration: none;
+    border-radius: 65px;
 }
-
+.infos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 .numbers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.numbers-item {
+.numbers-item, .infos-item {
     font-size: 3em;
     font-weight: bold;
 }
 
-.numbers-item h4 {
+.numbers-item h4, .infos-item h4 {
     font-size: .3em;
 }
