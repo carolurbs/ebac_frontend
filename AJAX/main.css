@@ -48,7 +48,7 @@ header .container {
 }
 
 .profile-username {
-    margin: 16px 0 32px;
+    margin: 5px 0;
     font-size: 1.1em;
 }
 
@@ -64,7 +64,7 @@ header .container {
 .infos{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 .numbers {
     display: grid;
@@ -76,6 +76,15 @@ header .container {
     font-weight: bold;
 }
 
-.numbers-item h4, .infos-item h4 {
+.infos-item {
+    font-size: 1em;
+    font-weight: bold;
+}
+.infos-item h4{
+    font-weight: normal;
+}
+
+
+.numbers-item h4{
     font-size: .3em;
 }
